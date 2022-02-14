@@ -8,7 +8,7 @@ component {
 	 */
 	function init(){
 		// Setup Pathing
-		variables.cwd          = getCWD().reReplace( "\.$", "" );
+		variables.cwd = getCWD().reReplace( "\.$", "" );
 		return this;
 	}
 
@@ -16,17 +16,16 @@ component {
 	 * Setup the module template
 	 */
 	function run(){
-
 		var moduleName = ask( "What is the human readable name of your module?" );
-		if( !len( moduleName ) ){
+		if ( !len( moduleName ) ) {
 			error( "Module Name is required" );
 		}
 		var moduleSlug = ask( "What is the slug for your module?" );
-		if( !len( moduleSlug ) ){
+		if ( !len( moduleSlug ) ) {
 			error( "Module Slug is required" );
 		}
 		var moduleDescription = ask( "Short description of your module?" );
-		if( !len( moduleDescription ) ){
+		if ( !len( moduleDescription ) ) {
 			error( "Module Description is required" );
 		}
 
